@@ -1,6 +1,6 @@
 export const fetchRequest = async (setUser, username, email, password) => {
     try {
-        const response = await fetch(`${process.env.REACT_APP_REST_API}user`, {
+        const response = await fetch(`${process.env.REACT_APP_REST_API}agent`, {
             method:  "POST",
             headers: { "Content-Type" : "application/json"},
             body: JSON.stringify({
